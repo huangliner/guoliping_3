@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		//分别使用call和apply求任意一组数的和
+				function sum() {
+					var add = 0;
+					for (var i = 0; i < arguments.length; i ++) {
+						add += arguments[i];
+					}
+				
+				console.log(sum.call(null, 4, 7)); 
+				console.log(sum.apply(null, [5, 8]));
+				
+			</script>
+	</body>
+</html>
